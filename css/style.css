@@ -1,0 +1,346 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	padding: 0;
+	background: #edebe6 url(/images/background.png) repeat;
+	font: 95%/1.4em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+h1 {
+	font-size: 2em;
+	color: #46668c;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a, a:visited {
+	text-decoration: underline;
+	color: #4d6282;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/* Page Structure */
+
+#masthead {
+	position: relative;
+	height: 150px;
+	margin: 10px 0 0;
+	background: transparent url(/images/silhouette/small.svg) no-repeat center center;
+}
+
+#masthead hgroup {
+	text-indent: -9999px;
+}
+
+#masthead nav {
+	display: none;
+}
+
+#main {
+	margin: 0 25px;
+}
+
+.home #main {
+	margin: 0;
+}
+
+#about {
+	display: block;
+	margin: 75px 1em 10px;
+	border-top: 1px solid #d5d3dc;
+}
+
+
+#footer {
+	display: block;
+	margin: 2em 0;
+	text-align: center;
+	color: #999;
+}
+
+#footer address {
+	display: inline;
+}
+
+#footer address a {
+	text-decoration: none;
+	font-style: normal;
+	color: #999
+}
+
+/* Widgets */
+
+.home .widget {
+	display: block;
+	margin: 25px 1em 10px;
+}
+
+.widget li {
+	margin: 1em 0;
+	list-style-type: none;
+}
+
+.widget-title {
+	height: 25px;
+	background: url(/images/icons.png) no-repeat -18px 0;
+	text-indent: -9999px;
+}
+
+#ja-github-5 {
+	display: block;
+	background: #fff;
+	border: 1px solid #d5d3dc;
+	border-left: 0;
+	border-right: 0;
+}
+
+.github-widget .widget-title {
+	background-position: -18px -155px;
+}
+
+.widget_flickr-widget a {
+	display: inline-block;
+	margin: 0 10px 10px 0;
+}
+
+.widget_flickr-widget img {
+	width: 120px;
+	height: 120px;
+	border: 7px solid #fff;
+	border-radius: 1px;
+
+	box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.widget_flickr-widget .photos {
+	height: 293px;
+	margin: 18px 0 9px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.widget_flickr-widget .quick-flickr-item {
+	display: inline;
+}
+
+.widget_flickr-widget .widget-title {
+	height: 20px;
+	background-position: -15px -350px;
+}
+
+.widget_flickr-widget .follow-button {
+	display: inline;
+	padding: 0 4px 1px;
+	background: #eaeaea;
+	border: 1px solid #bcbcbc;
+	border-radius: 3px;
+}
+
+.widget_flickr-widget .follow-button:hover {
+	border-color: #999;
+}
+
+.widget_flickr-widget .follow-button a {
+	padding: 0 0 0 18px;
+	background: transparent url(/images/icons.png) no-repeat -50px -435px;
+}
+
+.twitter-widget .widget-title {
+	background-position: -43px 0;
+}
+
+.twitter-widget .time-meta a, .github-widget a {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+.twitter-widget .time-meta a:hover, .github-widget a:hover {
+	text-decoration: underline;
+}
+
+.follow-button {
+	padding: 15px 0;
+}
+
+.follow-button a {
+	margin: 0;
+	color: #333;
+	font: bold 11px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 0 #fff;
+	text-decoration: none;
+}
+
+.follow-button a:hover {
+	cursor: pointer;
+}
+
+
+
+/* Upgrade! */
+
+@media (min-width: 768px) {
+
+	body {
+		padding: 75px 0 0;
+	}
+
+	#masthead {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		height: 1200px;
+		background: transparent url(/images/silhouette/large.svg) no-repeat 60% 0;
+	}
+
+	.home #masthead {
+		-webkit-transform: translate3d(0, 0, 0);
+
+		animation: slideIn 0.75s ease-out;
+    	-webkit-animation: slideIn 0.75s ease-out;
+		-moz-animation-name: slideIn 0.75s ease-out;
+	}
+
+	#masthead nav {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 200px;
+		height: 300px;
+		background: transparent url(/images/jeff.png) no-repeat left 0;
+	}
+
+	.home #masthead nav {
+		-webkit-transform: translate3d(0, 0, 0);
+
+		-animation: show 0.75s linear;
+		-webkit-animation: show 0.75s linear;
+		-moz-animation: show 0.75s linear;
+	}
+
+	#masthead nav ul {
+		margin: 120px 0 0 25px;
+		list-style-type: none;
+	}
+
+	#about {
+		clear: both;
+		margin-left: 38.2%;
+	}
+
+	#about:target {
+
+	}
+
+	#footer {
+		margin: 50px 1em 15px 38.2%;
+	}
+
+	.home .widget {
+		margin: 25px 1em 50px 38.2%;
+	}
+
+	.home .widget-content {
+		-webkit-transform: translate3d(0, 0, 0);
+
+		animation: fadeIn 0.37s ease-in;
+		-webkit-animation: fadeIn 0.37s ease-in;
+		-moz-animation: fadeIn 1s ease-in;
+	}
+
+	.widget_flickr-widget .photos,
+	#footer {
+		text-align: left;
+	}
+
+	.widget_flickr-widget .follow-button {
+		margin: 0 12px 20px;
+	}
+
+	.follow-button {
+		float: right;
+		padding: 0;
+	}
+
+	.post {
+		margin: 25px 1em 50px 38.2%;
+	}
+
+	.post h1 {
+		font-size: 1.5em;
+	}
+
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+	0% { background-position: 135% 0; }
+	50% { background-position: 135% 0; }
+	100% { background-position: 60% 0; }
+}
+
+@-webkit-keyframes slideIn {
+	0% { background-position: 135% 0; }
+	50% { background-position: 135% 0; }
+	100% { background-position: 60% 0; }
+}
+
+@-moz-keyframes slideIn {
+	0% { background-position: 135% 0; }
+	50% { background-position: 135% 0; }
+	100% { background-position: 60% 0; }
+}
+
+@keyframes show {
+	0% { opacity: 0; }
+	99% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes show {
+	0% { opacity: 0; }
+	99% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes show {
+	0% { opacity: 0; }
+	99% { opacity: 0; }
+	100% { opacity: 1; }
+}
