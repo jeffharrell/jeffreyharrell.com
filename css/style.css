@@ -45,10 +45,6 @@ a:hover {
 	text-indent: -9999px;
 }
 
-#masthead nav {
-	display: none;
-}
-
 #main {
 	margin: 0 25px;
 }
@@ -69,6 +65,10 @@ a:hover {
 	margin: 2em 0;
 	text-align: center;
 	color: #999;
+}
+
+#footer nav {
+	display: none;
 }
 
 #footer address {
@@ -130,6 +130,7 @@ a:hover {
 .widget_flickr-widget .photos {
 	height: 293px;
 	margin: 18px 0 9px;
+	padding: 3px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -219,29 +220,6 @@ a:hover {
 		-moz-animation-name: slideIn 0.75s ease-out;
 	}
 
-	#masthead nav {
-		display: block;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 200px;
-		height: 300px;
-		background: transparent url(/images/jeff.png) no-repeat left 0;
-	}
-
-	.home #masthead nav {
-		-webkit-transform: translate3d(0, 0, 0);
-
-		-animation: show 0.75s linear;
-		-webkit-animation: show 0.75s linear;
-		-moz-animation: show 0.75s linear;
-	}
-
-	#masthead nav ul {
-		margin: 120px 0 0 25px;
-		list-style-type: none;
-	}
-
 	#about {
 		clear: both;
 		margin-left: 38.2%;
@@ -252,7 +230,31 @@ a:hover {
 	}
 
 	#footer {
+		position: relative;
 		margin: 50px 1em 15px 38.2%;
+	}
+
+	#footer nav {
+		display: block;
+		position: absolute;
+		top: -500px;
+		left: -225px;
+		width: 200px;
+		height: 300px;
+		background: transparent url(/images/jeff.png) no-repeat left 0;
+	}
+
+	.home #footer nav {
+		-webkit-transform: translate3d(0, 0, 0);
+
+		-animation: show 0.75s linear;
+		-webkit-animation: show 0.75s linear;
+		-moz-animation: show 0.75s linear;
+	}
+
+	#footer nav ul {
+		margin: 120px 0 0 25px;
+		list-style-type: none;
 	}
 
 	.home .widget {
