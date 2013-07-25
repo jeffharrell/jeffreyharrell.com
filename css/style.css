@@ -95,7 +95,7 @@ a:hover {
 
 .widget-title {
 	height: 25px;
-	background: url(/images/icons.png) no-repeat -18px 0;
+	background: url(/images/icons.png) no-repeat -43px 0;
 	text-indent: -9999px;
 }
 
@@ -160,11 +160,11 @@ a:hover {
 	background: transparent url(/images/icons.png) no-repeat -50px -435px;
 }
 
-.twitter-widget .widget-title {
+.widget_twitter .widget-title {
 	background-position: -43px 0;
 }
 
-.twitter-widget .time-meta a, .github-widget a {
+.widget_twitter .time-meta a, .github-widget a {
 	display: inline-block;
 	margin: 0 4px 0 0;
 	font-weight: bold;
@@ -172,7 +172,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.twitter-widget .time-meta a:hover, .github-widget a:hover {
+.widget_twitter .time-meta a:hover, .github-widget a:hover {
 	text-decoration: underline;
 }
 
@@ -213,10 +213,11 @@ a:hover {
 
 	.home #masthead {
 		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
 
-		animation: slideIn 0.75s ease-out;
-    	-webkit-animation: slideIn 0.75s ease-out;
-		-moz-animation-name: slideIn 0.75s ease-out;
+		animation: slideIn 0.5s ease-out;
+    	-webkit-animation: slideIn 0.5s ease-out;
+		-moz-animation-name: slideIn 0.5s ease-out;
 	}
 
 	#masthead nav {
@@ -231,6 +232,7 @@ a:hover {
 
 	.home #masthead nav {
 		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
 
 		-animation: show 0.75s linear;
 		-webkit-animation: show 0.75s linear;
@@ -261,6 +263,7 @@ a:hover {
 
 	.home .widget-content {
 		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
 
 		animation: fadeIn 0.37s ease-in;
 		-webkit-animation: fadeIn 0.37s ease-in;
@@ -310,37 +313,37 @@ a:hover {
 }
 
 @keyframes slideIn {
-	0% { background-position: 135% 0; }
-	50% { background-position: 135% 0; }
-	100% { background-position: 60% 0; }
+	0% { transform: translate3d(0, 2400px, 0); animation-timing-function: ease-out; }
+	65% { transform: translate3d(0, -40px, 0); animation-timing-function: ease-in; }
+	100% { transform: translate3d(0, 20px, 0); }
 }
 
 @-webkit-keyframes slideIn {
-	0% { background-position: 135% 0; }
-	50% { background-position: 135% 0; }
-	100% { background-position: 60% 0; }
+	0% { -webkit-transform: translate3d(0, 2400px, 0); -webkit-animation-timing-function: ease-out; }
+	65% { -webkit-transform: translate3d(0, -40px, 0); -webkit-animation-timing-function: ease-in; }
+	100% { -webkit-transform: translate3d(0, 20px, 0); }
 }
 
 @-moz-keyframes slideIn {
-	0% { background-position: 135% 0; }
-	50% { background-position: 135% 0; }
-	100% { background-position: 60% 0; }
+	0% { -moz-transform: translate3d(0, 2400px, 0); -moz-animation-timing-function: ease-out; }
+	65% { -moz-transform: translate3d(0, -40px, 0); -moz-animation-timing-function: ease-in; }
+	100% { -moz-transform: translate3d(0, 20px, 0); }
 }
 
 @keyframes show {
 	0% { opacity: 0; }
-	99% { opacity: 0; }
+	75% { opacity: 0; }
 	100% { opacity: 1; }
 }
 
 @-webkit-keyframes show {
 	0% { opacity: 0; }
-	99% { opacity: 0; }
+	75% { opacity: 0; }
 	100% { opacity: 1; }
 }
 
 @-moz-keyframes show {
 	0% { opacity: 0; }
-	99% { opacity: 0; }
+	75% { opacity: 0; }
 	100% { opacity: 1; }
 }
