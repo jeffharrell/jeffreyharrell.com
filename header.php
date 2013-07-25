@@ -19,6 +19,12 @@
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2><?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?></h2>
 		</hgroup>
+		<nav>
+			<ul role="navigation">
+				<li><a href="https://www.linkedin.com/in/jeffharrell" title="Jeff Harrell's LinkedIn Profile">LinkedIn Profile</a></li>
+				<li><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#108;&#111;&#064;&#106;&#101;&#102;&#102;&#114;&#101;&#121;&#104;&#097;&#114;&#114;&#101;&#108;&#108;&#046;&#099;&#111;&#109;" title="Contact Jeff Harrell" rel="author">hello@jeffreyharrell.com</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<div id="main" role="main">
