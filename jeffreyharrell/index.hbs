@@ -1,0 +1,29 @@
+{{!< default}}
+
+
+<div id="wrapper">
+
+	<header id="banner" role="banner">
+		<hgroup>
+			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+			<h2>{{@blog.description}}</h2>
+		</hgroup>
+		{{> nav-menu}}
+	</header>
+
+	<main id="main" role="main">
+	{{#foreach posts}}
+
+	<article>
+		<header>
+			<h1>{{{title}}}</h1>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
+		</header>
+
+		{{content}}
+	</article>
+
+	{{/foreach}}
+	</main>
+
+</div>

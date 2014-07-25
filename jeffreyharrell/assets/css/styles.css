@@ -1,0 +1,136 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	border-top: 10px solid #eee;
+	font: 125% "Open Sans", sans-serif;
+	color: #333;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 1em 0 0.5em;
+	font-size: 2em;
+}
+
+a:hover {
+	color: #209ec5;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0 1em;
+	max-width: 700px;
+}
+
+#banner {
+	text-align: center;
+}
+
+#banner h2 {
+	margin: -0.25em 0 0.75em;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+#banner nav {
+	border: 1px solid #ccc;
+	border-left: 0;
+	border-right: 0;
+	font-weight: 300;
+}
+
+#banner nav li {
+	display: inline-block;
+	margin: 10px 0;
+	width: 150px;
+}
+
+#main {
+	padding: 2em 0 0;
+}
+
+#main a {
+	color: #209ec5;
+	text-decoration: underline;
+}
+
+#main article {
+	padding: 0 0 2em;
+}
+
+#main article h1 {
+	margin: 1em 0 0.25em
+}
+
+#main article img {
+	max-width: 100%;
+}
+
+#main article pre {
+	white-space: pre-wrap;
+}
+
+#main article time {
+	display: inline-block;
+	margin: 0 0 1.5em;
+	color: #999;
+	font-weight: 300;
+}
+
+#footer {
+	margin: 3em 0 0;
+	padding: 1em 0;
+	background: #eee;
+	text-align: center;
+	font-weight: 300;
+	font-size: 80%;
+}
+
+#footer address {
+	display: inline;
+	font-style: normal;
+}
+
+.icon {
+	position: relative;
+	top: 2px;
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 104px 20px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+a:hover .icon {
+	background-image: url(../images/sprites-over.png);
+}
+
+.icon-linkedin {
+	background-position: -84px 0;
+}
+
+.icon-twitter {
+	background-position: 0 0;
+}
+
+.icon-flickr {
+	background-position: -28px 0;
+}
+
+.icon-github {
+	background-position: -56px 0;
+}
