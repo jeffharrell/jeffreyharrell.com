@@ -28,7 +28,7 @@ config = {
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
         },
@@ -42,7 +42,13 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://www.jeffreyharrell.com',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'sendmail',
+            },  
+            fromaddress: 'no-reply@jeffreyharrell.com'
+        },
         database: {
             client: 'sqlite3',
             connection: {
@@ -52,7 +58,7 @@ config = {
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
         }
@@ -72,7 +78,7 @@ config = {
             }
         },
         server: {
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             port: '2369'
         },
         logging: false

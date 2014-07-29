@@ -7,7 +7,7 @@
 ## Set up the data directory
 
 mkdir -p $HOME/data/{ghost,varnish}
-DATADIR=$HOME/data
+export DATADIR=$HOME/data
 
 
 ## Ghost
