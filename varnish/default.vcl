@@ -11,6 +11,12 @@ backend default {
 
 
 sub vcl_recv {
+    # Fix the domain if the www is not present
+    if (!(req.http.host ~ "\.jeffreyharrell\.com$")) {
+        set req.http.host = "www.jeffreyharrell.com";
+        error 750 "http://" + req.http.host + req.url;
+    }
+
     # If the client uses shift-F5, get (and cache) a fresh copy. Nice for
     # systems without content invalidation. Big sites will want to disable
     # this.
@@ -87,6 +93,17 @@ sub vcl_fetch {
 
     return(deliver);
 }
+
+
+sub vcl_error {
+    if (obj.status == 750) {
+        set obj.http.Location = obj.response;
+        set obj.status = 301;
+ 
+        return(deliver);
+    }
+}
+
 
 #
 # Below is a commented-out copy of the default VCL logic.  If you
