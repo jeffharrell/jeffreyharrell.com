@@ -5,7 +5,7 @@
 # server.
 #
 backend default {
-    .host = "web";
+    .host = "ghost";
     .port = "2368";
 }
 

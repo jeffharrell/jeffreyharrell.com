@@ -2,5 +2,15 @@ web:
   image: dockerfile/ghost
   volumes:
    - config/ghost:/ghost-override
+  expose:
+   - "2368:2368"
+
+proxy:
+  image: dockerfile/nginx
+  volumes:
+   - config/nginx/logs:/var/log/nginx
+   - config/nginx/sites-enabled:/etc/nginx/sites-enabled
   ports:
-   - "80:2368"
+   - "80:80"
+  links:
+   - web
