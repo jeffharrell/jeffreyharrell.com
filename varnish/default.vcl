@@ -5,7 +5,7 @@
 # server.
 #
 backend default {
-    .host = "ghost";
+    .host = "web";
     .port = "2368";
 }
 
@@ -99,7 +99,7 @@ sub vcl_error {
     if (obj.status == 750) {
         set obj.http.Location = obj.response;
         set obj.status = 301;
- 
+
         return(deliver);
     }
 }

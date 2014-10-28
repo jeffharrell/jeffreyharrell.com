@@ -15,8 +15,7 @@ config = {
             transport: 'SMTP',
             options: {
                 service: 'sendmail',
-            },
-			fromaddress: 'no-reply@jeffreyharrell.com'
+            }
         },
 
         database: {
@@ -46,8 +45,7 @@ config = {
             transport: 'SMTP',
             options: {
                 service: 'sendmail',
-            },  
-            fromaddress: 'no-reply@jeffreyharrell.com'
+            }
         },
         database: {
             client: 'sqlite3',
