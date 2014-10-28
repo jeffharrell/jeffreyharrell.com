@@ -1,15 +1,15 @@
 web:
   image: dockerfile/ghost
   volumes:
-   - ghost/:/ghost-override
+   - config/ghost/:/ghost-override
   ports:
    - "2368"
 
 proxy:
   image: paul91/varnish
   volumes:
-   - varnish/default.vcl:/etc/varnish/default.vcl:ro
-   - varnish/logs:/var/log/varnish
+   - config/varnish/default.vcl:/etc/varnish/default.vcl:ro
+   - config/varnish/logs:/var/log/varnish
   ports:
    - "80"
   links:
