@@ -1,0 +1,11 @@
+2014/10/29 02:27:53 [warn] 1#0: server name "http://www.jeffreyharrell.com$1" has suspicious symbols in /etc/nginx/sites-enabled/default.conf:8
+2014/10/29 02:27:53 [emerg] 1#0: invalid server name or wildcard "^(.*)" on 0.0.0.0:80
+2014/10/29 02:28:34 [warn] 1#0: server name "http://www.jeffreyharrell.com$1" has suspicious symbols in /etc/nginx/sites-enabled/default.conf:8
+2014/10/29 02:28:34 [emerg] 1#0: invalid server name or wildcard "^(.*)" on 0.0.0.0:80
+2014/10/29 02:30:46 [emerg] 1#0: unexpected "}" in /etc/nginx/sites-enabled/default.conf:11
+2014/10/29 02:31:20 [warn] 1#0: server name "$scheme://www.jeffreyharrell.com$request_uri" has suspicious symbols in /etc/nginx/sites-enabled/default.conf:10
+2014/10/29 02:31:20 [emerg] 1#0: could not build the server_names_hash, you should increase server_names_hash_bucket_size: 32
+2014/10/29 02:32:17 [emerg] 1#0: could not build the server_names_hash, you should increase server_names_hash_bucket_size: 32
+2014/10/29 02:33:32 [emerg] 1#0: "http" directive is not allowed here in /etc/nginx/sites-enabled/default.conf:1
+2014/10/29 02:37:09 [emerg] 1#0: "http" directive is not allowed here in /etc/nginx/sites-enabled/default.conf:1
+2014/10/29 02:40:04 [emerg] 1#0: "http" directive is not allowed here in /etc/nginx/sites-enabled/default.conf:1
