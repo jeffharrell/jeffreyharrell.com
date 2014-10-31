@@ -2,7 +2,7 @@ web:
   image: dockerfile/ghost
   volumes:
    - config/ghost:/ghost-override
-  expose:
+  ports:
    - "2368:2368"
 
 proxy:
