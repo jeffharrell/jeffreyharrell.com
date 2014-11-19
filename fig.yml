@@ -10,6 +10,7 @@ proxy:
   volumes:
    - config/nginx/logs:/var/log/nginx
    - config/nginx/sites-enabled:/etc/nginx/sites-enabled
+   - config/nginx/ssl:/etc/nginx/certs
   ports:
    - "80:80"
   links:
