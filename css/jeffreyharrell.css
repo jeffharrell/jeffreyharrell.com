@@ -6,6 +6,8 @@ body {
 }
 
 h1 {
+	margin: 0;
+	padding: 0;
 	font-size: 3em;
 }
 
@@ -31,4 +33,11 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style-position: inside;
+}
+
+#banner {
+	background: transparent url(../images/headshot.png) no-repeat;
+	height: 100px;
+	padding: 20px 0 0 125px;
+	margin: 10px 0 0;
 }
