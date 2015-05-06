@@ -19,7 +19,7 @@ h1 em {
 
 h2, h3 {
 	display: inline-block;
-	margin: 2em 0 0.5em;
+	margin: 1.5em 0 0.5em;
 	padding-left: 4px;
 	font-size: 1.5em;
 	border-left: 10px solid #f2f2f2;
@@ -36,9 +36,13 @@ ul {
 	list-style-position: inside;
 }
 
+li {
+	line-height: 1.3em;
+}
+
 #banner {
 	background: transparent url(../images/headshot.png) no-repeat;
-	height: 100px;
+	height: 90px;
 	padding: 20px 0 0 125px;
 	margin: 10px 0 0;
 }
