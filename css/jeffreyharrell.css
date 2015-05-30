@@ -36,10 +36,14 @@ li {
 }
 
 #banner {
-	background: transparent url(../images/headshot.png) no-repeat;
-	height: 90px;
-	padding: 20px 0 0 125px;
-	margin: 10px 0 0;
+	background: #f8f8f8 url(../images/falling.gif) 0 78px no-repeat;
+	height: 400px;
+}
+
+#banner h1 {
+	margin: 0;
+	padding: 10px 0;
+	background: #fff;
 }
 
 #banner h1 em {
@@ -54,7 +58,6 @@ li {
 
 	#banner {
 		height: auto;
-		padding-left: 0;
 		background: none;
 	}
 
