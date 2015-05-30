@@ -52,7 +52,7 @@ li {
 }
 
 
-/* Phones */
+/* Phones'ish */
 
 @media only screen and (max-width: 480px) {
 
@@ -71,5 +71,15 @@ li {
 
 	li {
 		line-height: 2em;
+	}
+}
+
+
+/* Tablets'ish */
+
+@media only screen and (max-width: 768px) {
+	#banner h1 {
+		padding-bottom: 30px;
+		font-size: 2em;
 	}
 }
