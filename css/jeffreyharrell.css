@@ -15,9 +15,9 @@ h1 {
 h2, h3 {
 	display: inline-block;
 	margin: 1.5em 0 0.5em;
-	padding-left: 4px;
+	padding-left: 10px;
 	font-size: 1.5em;
-	border-left: 10px solid #f2f2f2;
+	border-left: 12px solid #ffdc7b;
 }
 
 h1, h2, h3 {
@@ -26,13 +26,16 @@ h1, h2, h3 {
 }
 
 ul {
-	margin: 1em 0 1.5em;
+	margin: 1em 0 1.5em 1.2em;
 	padding: 0;
-	list-style-position: inside;
 }
 
 li {
 	line-height: 1.3em;
+}
+
+section {
+	float: left;
 }
 
 #banner {
@@ -51,6 +54,18 @@ li {
 	font-style: normal;
 }
 
+#links {
+	width: 20%;
+}
+
+#presentations {
+	width: 50%;
+}
+
+#posts {
+	width: 25%;
+}
+
 
 /* Phones'ish */
 
@@ -65,6 +80,11 @@ li {
 		font-size: 1.5em;
 	}
 
+	section {
+		float: none;
+		width: auto !important;
+	}
+
 	h2, h3 {
 		font-size: 1.25em;
 	}
@@ -77,7 +97,12 @@ li {
 
 /* Tablets'ish */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
+	section {
+		float: none;
+		width: auto !important;
+	}
+
 	#banner h1 {
 		padding-bottom: 30px;
 		font-size: 2em;
