@@ -4,41 +4,34 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>The Harrells</title>
-	<meta name="description" content="The Harrell family." />
+	<meta name="description" content="The Harrell family" />
 	<link rel="canonical" href="https://www.theharrells.com" />
 	<style>
-		body { background: #fff; }
-		div { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-		img { width: auto; max-width: 90%; height: auto; max-height: 90%; }
-		img:hover { animation: shake 0.5s; animation-iteration-count: infinite; }
+		body {
+			background: #6b6c5c;
+			color: #fff;
+		}
 
-		@keyframes shake {
-			0% { transform: translate(1px, 1px) rotate(0deg); }
-			10% { transform: translate(-1px, -2px) rotate(-1deg); }
-			20% { transform: translate(-3px, 0px) rotate(1deg); }
-			30% { transform: translate(3px, 2px) rotate(0deg); }
-			40% { transform: translate(1px, -1px) rotate(1deg); }
-			50% { transform: translate(-1px, 2px) rotate(-1deg); }
-			60% { transform: translate(-3px, 1px) rotate(0deg); }
-			70% { transform: translate(3px, 1px) rotate(-1deg); }
-			80% { transform: translate(-1px, -1px) rotate(1deg); }
-			90% { transform: translate(1px, 2px) rotate(0deg); }
-			100% { transform: translate(1px, -2px) rotate(-1deg); }
+		div {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		div span {
+			display: block;
+			padding: 10px;
+			border: 5px double rgba(255, 255, 255, 0.65);
+			line-height: 96px;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 96px;
 		}
 	</style>
 </head>
 <body>
 	<div>
-		<img src="images/background.jpg?t=20210128" width="564" height="556" />
+		<span>H</span>
 	</div>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-2544686-2', 'auto');
-		ga('send', 'pageview');
-	</script>
 </body>
 </html>
