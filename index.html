@@ -34,14 +34,14 @@
 		}
 
 		div span {
-			color: rgb(95, 133, 117, 0.1);
 			animation: 3s ease-in-out growtext;
 		}
 
 		@keyframes growtext {
-			0%   { font-size: 0; }
-			50%   { font-size: 0; }
-			100% { font-size: 100%; }
+			0%   { font-size: 0; color: rgb(95, 133, 117, 0.1); }
+			50%  { font-size: 0; }
+			80%  { color: rgb(95, 133, 117, 0.1); }
+			100% { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
 		}
 
 		@media screen and (max-width: 600px) {
