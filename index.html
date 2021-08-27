@@ -34,13 +34,14 @@
 		}
 
 		div span {
-			animation: 3s ease-in-out growtext;
+			animation: 2s ease-out growtext;
+			vertical-align: baseline;
 		}
 
 		@keyframes growtext {
 			0%   { font-size: 0; color: rgb(95, 133, 117, 0.1); }
-			50%  { font-size: 0; }
-			80%  { color: rgb(95, 133, 117, 0.1); }
+			80%  { font-size: 0; }
+			95%  { font-size: 125%; color: rgb(95, 133, 117, 0.1); }
 			100% { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
 		}
 
