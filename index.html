@@ -34,15 +34,16 @@
 		}
 
 		div span {
-			animation: 2s ease-out growtext;
+			animation: 8s ease-out 2s growtext;
 			vertical-align: baseline;
+			font-size: 0; color: rgb(95, 133, 117, 0.1);
 		}
 
 		@keyframes growtext {
-			0%   { font-size: 0; color: rgb(95, 133, 117, 0.1); }
-			80%  { font-size: 0; }
-			95%  { font-size: 125%; color: rgb(95, 133, 117, 0.1); }
-			100% { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
+			5%  { font-size: 135%; color: rgb(95, 133, 117, 0.1); }
+			10%  { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
+			40%  { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
+			45%  { font-size: 0; color: rgb(95, 133, 117, 0.1); }
 		}
 
 		@media screen and (max-width: 600px) {
