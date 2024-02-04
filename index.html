@@ -19,11 +19,11 @@
 	</script>
 	<style>
 		body {
-			background: rgb(95, 133, 117, 0.4);
+			background: #404040;
 			font-family: 'Dosis', sans-serif;
 			font-size: 20em;
 			letter-spacing: -0.05em;
-			color: rgb(95, 133, 117);
+			color: #E0E0E0;
 		}
 
 		div {
@@ -36,14 +36,27 @@
 		div span {
 			animation: 8s ease-out 2s growtext;
 			vertical-align: baseline;
-			font-size: 0; color: rgb(95, 133, 117, 0.1);
+			font-size: 0; 
+			opacity: 0.1;
 		}
 
 		@keyframes growtext {
-			5%  { font-size: 135%; color: rgb(95, 133, 117, 0.1); }
-			10%  { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
-			40%  { font-size: 100%; color: rgb(95, 133, 117, 1.0); }
-			45%  { font-size: 0; color: rgb(95, 133, 117, 0.1); }
+			5%  { 
+				font-size: 135%; 
+				opacity: 0.1;
+			}
+			10%  {
+				font-size: 100%;
+				opacity: 1.0;
+			}
+			40%  {
+				font-size: 100%; 
+				opacity: 1.0;
+			}
+			45%  {
+				font-size: 0;
+				opacity: 0.1;
+			}
 		}
 
 		@media screen and (max-width: 600px) {
