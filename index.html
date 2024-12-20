@@ -33,29 +33,51 @@
 			transform: translate(-50%, -50%);
 		}
 
-		div span {
-			animation: 8s ease-out 2s growtext;
-			vertical-align: baseline;
+		#the {
+			position: absolute;
+			left: -0.5em;
+			font-size: 20%; 
+			letter-spacing: 0;
+			opacity: 0;
+		}
+
+		#arrel {
+			animation: 7s ease-out 2s 1 normal forwards growtext;
 			font-size: 0; 
 			opacity: 0.1;
 		}
 
+		#s {
+			font-size: 100%; 
+			letter-spacing: 0;
+			opacity: 0;
+		}
+
+		#the, #s {
+			animation: 2s ease-out 2s 1 normal forwards showtext;
+		}
+
 		@keyframes growtext {
 			5%  { 
-				font-size: 135%; 
+				font-size: 150%; 
 				opacity: 0.1;
 			}
 			10%  {
 				font-size: 100%;
 				opacity: 1.0;
 			}
-			40%  {
+			100%  {
 				font-size: 100%; 
 				opacity: 1.0;
 			}
-			45%  {
-				font-size: 0;
-				opacity: 0.1;
+		}
+
+		@keyframes showtext {
+			0%  { 
+				opacity: 0;
+			}
+			100%  {
+				opacity: 1.0;
 			}
 		}
 
@@ -68,7 +90,7 @@
 </head>
 <body>
 	<div>
-		H<span>arrel</span>l
+		<span id="the">the</span> H<span id="arrel">arrel</span>l<span id="s">s</span>
 	</div>
 </body>
 </html>
